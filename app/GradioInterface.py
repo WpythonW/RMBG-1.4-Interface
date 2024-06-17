@@ -65,7 +65,7 @@ def gradio_remove_background(image):
     return remove_background(image)
 
 
-net, device = load_model("app/model.pth")
+net, device = load_model("app/models/model.pth")
 
 interface = gr.Interface(
     fn=gradio_remove_background,
