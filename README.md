@@ -13,7 +13,7 @@ Make sure you have [Poetry](https://python-poetry.org/docs/#installation) instal
 
    ```sh
    git clone https://github.com/WpythonW/RMBG-1.4-Interface.git
-   cd repo
+   cd RMBG-1.4-Interface.git
    ```
 
 2. Install dependencies:
