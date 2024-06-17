@@ -49,5 +49,5 @@ Make sure you have [Poetry](https://python-poetry.org/docs/#installation) instal
 Run the FastAPI server and Gradio interface:
 
 ```sh
-poetry run python GradioInterface.py
+poetry run python app/GradioInterface.py
 ```
