@@ -1,13 +1,18 @@
 [tool.poetry]
 name = "rmbg-1-4"
 version = "0.1.0"
-description = ""
+description = "A project for removing background from images"
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [{include = "rmbg_1"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+gradio = "^4.36.1"
+opencv-python-headless = "^4.10.0.84"
+numpy = "1.26.4"
+pillow = "^10.3.0"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
 
 
 [build-system]
