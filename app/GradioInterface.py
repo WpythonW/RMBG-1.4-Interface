@@ -13,10 +13,9 @@ from starlette.responses import StreamingResponse
 
 app = FastAPI()
 
-def load_model():
+def load_model(model_weights_path):
     net = BriaRMBG()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model_weights_path = "model.pth"
     net.load_state_dict(torch.load(model_weights_path, map_location=device))
     net.to(device)
     net.eval()
@@ -66,7 +65,7 @@ def gradio_remove_background(image):
     return remove_background(image)
 
 
-net, device = load_model()
+net, device = load_model("app/model.pth")
 
 interface = gr.Interface(
     fn=gradio_remove_background,
